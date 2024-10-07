@@ -1,25 +1,26 @@
 <?php
 include('express-stk.php');
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mpesa-Intergration</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container"> <!-- On action we can state express-stk.php -->
         <form action='<?php echo $_SERVER['PHP_SELF'] ?>' method='POST'>
             <div class="price">
-                <h1>PaymentTest, that's KES 100</h1> <!-- For testing purposes, we have added the amount manually. This should proceed from your website -->
+                <h1>PaymentTest Amount KES 1.00 </h1> <!-- For testing purposes, we have added the amount manually. This should proceed from your website -->
             </div>
             <div class="card__container">
                 <div class="card">
                     <div class="row">
-                        <img src="mpesa.png" style="width:30%;margin: 0 35%;">
+                        <img src="./ReadmeIMG/mpesa.png" style="width:30%;margin: 0 35%;">
                         <p style="color:#8F92C3;line-height:1.7;">1. Enter the <b>phone number</b> and press "<b>Confirm and Pay</b>"</br>2. You will receive a popup on your phone. Enter your <b>MPESA PIN</b></p>
                         <?php if ($errmsg != ''): ?>
                             <p style="    background: #cc2a24;padding: .8rem;color: #ffffff;"><?php echo $errmsg; ?></p>
@@ -41,4 +42,5 @@ include('express-stk.php');
         <p style="color:#8F92C3;line-height:1.7;margin-top:5rem;">Copyright 2024 | All Rights Reserved | Made by StanleyMochoge</p>
     </div>
 </body>
+
 </html>

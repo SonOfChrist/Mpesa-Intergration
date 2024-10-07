@@ -7,11 +7,11 @@ $errmsg  = '';
 $config = array(
     "env"              => "sandbox",
     "BusinessShortCode" => "174379",
-    "key"              => "", //Enter your consumer key here
-    "secret"           => "", //Enter your consumer secret here
+    "key"              => "QrOoOsnFGEWEGM3TeGSvoePwhVgrYChJ", //Enter your consumer key here
+    "secret"           => "lox97cIdNcMenXOA", //Enter your consumer secret here
     "username"         => "apitest",
     "TransactionType"  => "CustomerPayBillOnline",
-    "passkey"          => "", //Enter your passkey here
+    "passkey"          => "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919", //Enter your passkey here
     "CallBackURL"      => "https://f899-41-90-64-220.ngrok.io/mpesa/callback.php", //When using localhost, Use Ngrok to forward the response to your Localhost
     "AccountReference" => "CompanyXLTD",
     "TransactionDesc"  => "Payment of X",
@@ -23,7 +23,7 @@ if (isset($_POST['phone_number'])) {
 
     $phone = $_POST['phone_number'];
     $orderNo = $_POST['orderNo'];
-    $amount = 1;
+    $amount = 100;
 
     $phone = (substr($phone, 0, 1) == "+") ? str_replace("+", "", $phone) : $phone;
     $phone = (substr($phone, 0, 1) == "0") ? preg_replace("/^0/", "254", $phone) : $phone;

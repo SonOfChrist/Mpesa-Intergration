@@ -5,8 +5,8 @@ header("Content-Type:application/json");
 $env = "sandbox";
 $type = 4;
 $shortcode = '600988';
-$key = ""; //Put your key here
-$secret = "";  //Put your secret here
+$key = "QrOoOsnFGEWEGM3TeGSvoePwhVgrYChJ"; //Put your key here
+$secret = "lox97cIdNcMenXOA";  //Put your secret here
 $initiatorName = "testapi";
 $initiatorPassword = "Safaricom978!";
 $results_url = "https://mydomain.com/TransactionStatus/result/"; //Endpoint to receive results Body
